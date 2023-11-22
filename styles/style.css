@@ -9,9 +9,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "randela-smitha-handwriting";
+  src: url("../fonts/randela-smitha-handwriting.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --original-font: "himagsikan", sans-serif;
+  --randela-font: "randela-smitha-handwriting", sans-serif;
   --menu-font: "Inter", sans-serif;
   --main-font: "Poppins", sans-serif;
   --barcode-font: "Libre Barcode 39 Text", serif;
