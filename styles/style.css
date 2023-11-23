@@ -25,5 +25,12 @@
   --handwt-font: "Amatic SC", sans-serif;
   --soft-font: "Delius Unicase", cursive;
 
-  --main-clr: black;
+  --main-clr: #1a1a18;
+  --blackberry-clr: #44a7e3;
+  --blackberry-clr-dark: #023c8a;
+  --watermellon-clr: #fe3262;
+  --watermellon-clr-lime: #87e907;
+  --bb-grape-clr: #cb00df;
+  --bb-grape-clr-green: #04c952;
+  --grape-sparks-clr: #9e50df;
 }
