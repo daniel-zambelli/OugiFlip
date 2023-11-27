@@ -18,3 +18,19 @@
   text-transform: uppercase;
   font-family: var(--original-font);
 }
+
+.main__banner {
+  padding: 3rem 3rem;
+  height: 450px;
+  background-color: var(--blackberry-clr);
+}
+
+.main__banner-title {
+  text-align: center;
+  color: var(--off-white);
+}
+
+.ougiflip__design {
+  font-family: var(--original-font);
+  font-size: 400;
+}
