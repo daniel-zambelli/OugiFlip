@@ -1,36 +1,113 @@
-.header__container {
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo__img {
-  padding: 0 4rem;
-}
-
-.list__container {
+.links__container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  gap: 6rem;
-  padding: 0 6rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: var(--original-font);
-}
-
-.main__banner {
-  padding: 3rem 3rem;
-  height: 450px;
-  background-color: var(--blackberry-clr);
-}
-
-.main__banner-title {
+  justify-content: space-between;
   text-align: center;
-  color: var(--off-white);
+  gap: 4rem;
+  margin: 1rem 1rem;
+  font-size: 1.5rem;
+  font-family: var(--original-font);
 }
 
-.ougiflip__design {
-  font-family: var(--original-font);
-  font-size: 400;
+.action__btn {
+  color: var(--white);
+  font-family: var(--menu-font);
+  background-color: var(--watermellon-clr);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action__btn-dd-menu {
+  color: var(--white);
+  font-family: var(--main-font);
+  background-color: var(--watermellon-clr);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.7rem 0;
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.action__btn:hover {
+  scale: 1.05;
+}
+
+.action__btn:active {
+  scale: 0.95;
+}
+
+/* MENU HAMBURGUER CSS */
+
+.toggle__btn {
+  cursor: pointer;
+  display: none;
+}
+
+/* DROPDOWN MENU*/
+.dropdown__menu {
+  position: absolute;
+  right: 2rem;
+  top: 100px;
+  width: 300px;
+  background: #1a1a1876;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown__menu li {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown__menu-container {
+  font-family: var(--main-font);
+  padding: 1rem;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .links__container,
+  .action__btn {
+    display: none;
+  }
+
+  .toggle__btn {
+    display: block;
+  }
+
+  .action__btn-dd-menu {
+    display: inline;
+  }
 }

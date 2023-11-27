@@ -26,12 +26,19 @@
   --soft-font: "Delius Unicase", cursive;
 
   --main-clr: #1a1a18;
-  --off-white: #ffffff;
+  --white: #ffffff;
+  --off-white: #e4e4e4;
   --blackberry-clr: #44a7e3;
   --blackberry-clr-dark: #023c8a;
-  --watermellon-clr: #fe3262;
+  --watermellon-clr: #fe3262fe;
   --watermellon-clr-lime: #87e907;
   --bb-grape-clr: #cb00df;
   --bb-grape-clr-green: #04c952;
   --grape-sparks-clr: #9e50df;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  background-color: var(--white);
 }
