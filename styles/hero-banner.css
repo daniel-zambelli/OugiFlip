@@ -1,0 +1,37 @@
+.hero__banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+  max-height: calc(100vh - 100px);
+}
+
+.container__mkt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 2rem;
+  gap: 5rem;
+}
+
+.title {
+  font-family: var(--original-font);
+  font-size: 3rem;
+  text-shadow: var(--text-shadow);
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 4px;
+  font-family: var(--handwt-font);
+  text-shadow: var(--text-shadow);
+}
+
+.hero__banner-img {
+  max-width: 700px;
+  border-radius: 40px;
+}

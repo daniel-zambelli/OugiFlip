@@ -1,6 +1,5 @@
 header {
   position: relative;
-  padding: 0 2rem;
 }
 
 .navbar {
@@ -17,7 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  gap: 4rem;
+  gap: 6rem;
   padding: 1rem 1rem;
 }
 
