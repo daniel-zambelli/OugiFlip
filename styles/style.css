@@ -35,6 +35,8 @@
   --bb-grape-clr: #cb00df;
   --bb-grape-clr-green: #04c952;
   --grape-sparks-clr: #9e50df;
+
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.32);
 }
 
 body {

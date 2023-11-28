@@ -18,9 +18,13 @@ header {
   justify-content: space-between;
   text-align: center;
   gap: 4rem;
-  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+}
+
+.links__item {
   font-size: 1.5rem;
   font-family: var(--original-font);
+  text-shadow: var(--text-shadow);
 }
 
 .action__btn {
@@ -28,13 +32,14 @@ header {
   font-family: var(--menu-font);
   background-color: var(--watermellon-clr);
   padding: 0.8rem 1.2rem;
+  box-shadow: var(--text-shadow);
   border: none;
   outline: none;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .action__btn:hover {
@@ -60,9 +65,9 @@ header {
   top: 100px;
   width: 300px;
   height: 0;
-  background: #1a1a1876;
+  background: #49b7544c;
   backdrop-filter: blur(15px);
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -81,14 +86,16 @@ header {
   font-family: var(--main-font);
   color: var(--white);
   font-size: 1.2rem;
+  text-shadow: var(--text-shadow);
 }
 
 .dropdown__link:hover {
-  color: red;
+  color: var(--watermellon-clr);
 }
 
 .action__btn-dd-menu {
   color: var(--white);
+  text-shadow: var(--text-shadow);
   font-family: var(--main-font);
   background-color: var(--watermellon-clr);
   border-radius: 20px;
@@ -103,10 +110,6 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
-  .navbar {
-    padding: 1rem 0;
-  }
-
   .links__container,
   .action__btn {
     display: none;
@@ -118,7 +121,6 @@ header {
 
   .dropdown__menu {
     display: block;
-    width: calc(100% - 4rem);
   }
 
   .dropdown__link {
@@ -133,5 +135,19 @@ header {
 
   .bx {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0;
+  }
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .dropdown__menu {
+    left: 2rem;
+    width: unset;
   }
 }
