@@ -69,20 +69,22 @@ header {
 
 .dropdown__menu.open {
   height: inherit;
-}
-
-.dropdown__menu li {
-  padding: 0.7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1.5rem;
 }
 
 .dropdown__menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   font-family: var(--main-font);
-  padding: 1rem;
   color: var(--white);
   font-size: 1.2rem;
+}
+
+.dropdown__link:hover {
+  color: red;
 }
 
 .action__btn-dd-menu {
@@ -116,6 +118,7 @@ header {
 
   .dropdown__menu {
     display: block;
+    width: calc(100% - 4rem);
   }
 
   .dropdown__link {
@@ -125,6 +128,10 @@ header {
   }
 
   .action__btn-dd-menu {
-    display: inline;
+    display: block;
+  }
+
+  .bx {
+    font-size: 36px;
   }
 }
