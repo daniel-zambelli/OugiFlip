@@ -1,5 +1,6 @@
 header {
-  position: relative;
+  position: fixed;
+  background-color: var(--white);
 }
 
 .navbar {
@@ -22,31 +23,8 @@ header {
 
 .links__item {
   font-size: 1.5rem;
-  font-family: var(--original-font);
-  text-shadow: var(--text-shadow);
-}
-
-.action__btn {
-  color: var(--white);
   font-family: var(--menu-font);
-  background-color: var(--watermellon-clr);
-  padding: 0.8rem 1.2rem;
-  box-shadow: var(--text-shadow);
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.action__btn:hover {
-  scale: 1.05;
-}
-
-.action__btn:active {
-  scale: 0.95;
+  text-shadow: var(--text-shadow);
 }
 
 /* MENU HAMBURGUER CSS */
@@ -65,7 +43,7 @@ header {
   width: 300px;
   height: 0;
   background: #49b7544c;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -88,29 +66,12 @@ header {
   text-shadow: var(--text-shadow);
 }
 
-.dropdown__link:hover {
-  color: var(--watermellon-clr);
-}
-
-.action__btn-dd-menu {
-  color: var(--white);
-  text-shadow: var(--text-shadow);
-  font-family: var(--main-font);
-  background-color: var(--watermellon-clr);
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0.7rem 0;
-  text-align: center;
-  width: 100%;
-  display: none;
-}
-
 @media screen and (max-width: 1200px) {
-  .links__container,
-  .action__btn {
+  header {
+    position: relative;
+  }
+
+  .links__container {
     display: none;
   }
 
@@ -120,16 +81,14 @@ header {
 
   .dropdown__menu {
     display: block;
+    left: 2rem;
+    width: unset;
   }
 
   .dropdown__link {
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: var(--original-font);
-  }
-
-  .action__btn-dd-menu {
-    display: block;
+    font-family: var(--menu-font);
   }
 
   .bx {
