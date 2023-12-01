@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: relative;
   background-color: var(--white);
 }
 
